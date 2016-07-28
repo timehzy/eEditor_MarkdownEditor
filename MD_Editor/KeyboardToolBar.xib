@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KY0-L7-gLo" customClass="KeyboardToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEQ-6V-pM3">
+                    <rect key="frame" x="8" y="4" width="40" height="36"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Wc8-L5-ays"/>
+                        <constraint firstAttribute="height" constant="36" id="YWW-Uh-HPl"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                    <state key="normal" image="tab_normal">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tabBtnTouched:" destination="KY0-L7-gLo" eventType="touchUpInside" id="kcO-9n-nPn"/>
+                        <outletCollection property="gestureRecognizers" destination="8Wm-BS-XMK" appends="YES" id="bvj-Wg-bvr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9t2-39-Lpc">
+                    <rect key="frame" x="323" y="4" width="44" height="36"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="XpM-Mn-gQ6"/>
+                        <constraint firstAttribute="height" constant="36" id="qNW-Nc-SLp"/>
+                    </constraints>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.67450980392156867" green="0.24313725490196078" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="doneBtnTouched:" destination="KY0-L7-gLo" eventType="touchUpInside" id="d8U-xe-sUK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dV8-Tg-5yQ">
+                    <rect key="frame" x="100" y="5" width="44" height="34"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="04k-kY-YEs"/>
+                        <constraint firstAttribute="height" constant="34" id="9L2-TG-c9a"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
+                    <state key="normal" image="list_normal">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="listBtnTouched:" destination="KY0-L7-gLo" eventType="touchUpInside" id="Cim-rj-gFt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVp-JD-7lM">
+                    <rect key="frame" x="52" y="5" width="44" height="34"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="7lJ-Jl-vXc"/>
+                        <constraint firstAttribute="height" constant="34" id="Tt1-oi-s2l"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="3" minY="1" maxX="3" maxY="0.0"/>
+                    <state key="normal" image="head_normal">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="headBtnTouched:" destination="KY0-L7-gLo" eventType="touchUpInside" id="Jao-f6-PPd"/>
+                        <outletCollection property="gestureRecognizers" destination="gcc-Oc-WDs" appends="YES" id="XQb-Oi-hS6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9t2-39-Lpc" firstAttribute="centerY" secondItem="KY0-L7-gLo" secondAttribute="centerY" id="5fM-zK-uFd"/>
+                <constraint firstItem="WEQ-6V-pM3" firstAttribute="centerY" secondItem="KY0-L7-gLo" secondAttribute="centerY" id="FBg-PD-Wz1"/>
+                <constraint firstItem="YVp-JD-7lM" firstAttribute="centerY" secondItem="KY0-L7-gLo" secondAttribute="centerY" id="Iks-wY-ZQa"/>
+                <constraint firstItem="YVp-JD-7lM" firstAttribute="leading" secondItem="WEQ-6V-pM3" secondAttribute="trailing" constant="4" id="KXk-ag-kqe"/>
+                <constraint firstItem="dV8-Tg-5yQ" firstAttribute="leading" secondItem="YVp-JD-7lM" secondAttribute="trailing" constant="4" id="gQb-r9-Uzh"/>
+                <constraint firstAttribute="trailing" secondItem="9t2-39-Lpc" secondAttribute="trailing" constant="8" id="jm2-Ed-Uve"/>
+                <constraint firstItem="WEQ-6V-pM3" firstAttribute="leading" secondItem="KY0-L7-gLo" secondAttribute="leading" constant="8" id="k7c-Ub-WYj"/>
+                <constraint firstItem="dV8-Tg-5yQ" firstAttribute="centerY" secondItem="KY0-L7-gLo" secondAttribute="centerY" id="kEZ-dm-1re"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headBtn" destination="YVp-JD-7lM" id="tVQ-cZ-p1E"/>
+            </connections>
+            <point key="canvasLocation" x="126.5" y="-25"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="gcc-Oc-WDs">
+            <connections>
+                <action selector="headBtnLongPress:" destination="KY0-L7-gLo" id="KLa-du-BZA"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="8Wm-BS-XMK">
+            <connections>
+                <action selector="tabBtnLongPress:" destination="KY0-L7-gLo" id="Rsi-Ba-Yo2"/>
+            </connections>
+        </pongPressGestureRecognizer>
+        <view contentMode="scaleToFill" id="bw5-0q-OK2" customClass="ScanViewToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lTP-4z-m8K">
+                    <rect key="frame" x="8" y="3" width="36" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" backgroundImage="back"/>
+                    <connections>
+                        <action selector="backBtnTouched:" destination="bw5-0q-OK2" eventType="touchUpInside" id="rLf-Ud-jc3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej6-g9-ygd">
+                    <rect key="frame" x="327" y="1.5" width="40" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" backgroundImage="delete"/>
+                    <connections>
+                        <action selector="deleteBtnTouched:" destination="bw5-0q-OK2" eventType="touchUpInside" id="tPz-yI-4QM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8x-qW-jT0">
+                    <rect key="frame" x="169" y="4" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="AHM-x6-UU6"/>
+                        <constraint firstAttribute="width" constant="36" id="NiK-E8-ikt"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="share"/>
+                    <connections>
+                        <action selector="sharedBtnTouched:" destination="bw5-0q-OK2" eventType="touchUpInside" id="azB-CM-BbT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lTP-4z-m8K" firstAttribute="centerY" secondItem="bw5-0q-OK2" secondAttribute="centerY" id="0dj-rF-PtV"/>
+                <constraint firstItem="b8x-qW-jT0" firstAttribute="centerY" secondItem="bw5-0q-OK2" secondAttribute="centerY" id="QX3-73-ndk"/>
+                <constraint firstItem="Ej6-g9-ygd" firstAttribute="centerY" secondItem="bw5-0q-OK2" secondAttribute="centerY" id="SOm-jj-iTY"/>
+                <constraint firstAttribute="trailing" secondItem="Ej6-g9-ygd" secondAttribute="trailing" constant="8" id="UsZ-AZ-NHZ"/>
+                <constraint firstItem="lTP-4z-m8K" firstAttribute="leading" secondItem="bw5-0q-OK2" secondAttribute="leading" constant="8" id="jC0-ZD-kDX"/>
+                <constraint firstItem="b8x-qW-jT0" firstAttribute="centerX" secondItem="bw5-0q-OK2" secondAttribute="centerX" id="qXI-hF-FcJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="126.5" y="118"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="36" height="36"/>
+        <image name="delete" width="40" height="40"/>
+        <image name="head_normal" width="100" height="100"/>
+        <image name="list_normal" width="100" height="100"/>
+        <image name="share" width="50" height="50"/>
+        <image name="tab_normal" width="100" height="100"/>
+    </resources>
+</document>
